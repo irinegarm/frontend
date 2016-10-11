@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url('FuturaMediumC.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Baskerville Cyrillic LT Std';
+  src: url('BaskervilleCyrLTStd-Upright.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font: 400 14px/15px 'FuturaMediumC', 'Arial', sans-serif;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+}
+
+.top-line {
+  background-color: rgb(239, 239, 239);
+}
+
+.top-line::after {
+  content: '';
+  width: 100%;
+  display: table;
+}
+
+.line-left-block {
+  float: left;
+}
+
+.line-right-block {
+  float: right;
+}
+
+.header::after {
+  content: '';
+  width: 100%;
+  display: table;
+}
+
+.header .left {
+  float: left;
+  font-size: 0;
+}
+
+.header .right {
+  float: right;
+}
+
+.header .center {
+  background-color: gray;
+  height: 100px;
+  margin: 0 120px;
+}
+
+.menu {
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  line-height: 17px;
+  padding: 4px 0;
+}
+
+.menu ul {
+  margin: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li + li {
+  margin-left: 50px;
+}
+
+.grid > div {
+  height: 390px;
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding-right: 30px;
+}
+
+.grid {
+  margin-right: -30px;
+}
+
+.grid > div div {
+  height: 390px;
+  background-color: pink;
+}
+
+.grid >  div:nth-child(2) {
+  width: 40%;
+}
+
+.grid > div:nth-child(2) div{
+  background-color: green;
+}
+
+.grid > div:nth-child(3) div {
+  background-color: blue;
+}
+
+.grid > div:nth-child(3) {
+  width: 60%;
+}
+
+.grid > div:nth-child(4) div {
+  background-color: maroon;
+}
+
+.grid > div:nth-child(4) {
+  width: 60%;
+}
+
+.grid > div:nth-child(5) div {
+  background-color: indigo;
+}
+
+.grid > div:nth-child(5) {
+  width: 40%;
+}
